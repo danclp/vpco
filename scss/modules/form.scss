@@ -25,6 +25,16 @@
 		display: inline-block;
 		font-size: 0.85em;
 		margin-bottom: 10px;
+		width: 100%;
+
+		.req, i {
+			color: red;
+		} // .req
+
+		i {
+			font-size: 0.85em;
+			float: right;
+		} //i
 	} // label
 
 	input {

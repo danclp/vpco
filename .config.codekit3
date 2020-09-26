@@ -189,6 +189,14 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/landing.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/landing.html",
+		"oF": 0
+		},
 	"/node_modules": {
 		"ft": 65536,
 		"oA": 2,
@@ -269,6 +277,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/scss/modules/big-buttons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/modules/big-buttons.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
