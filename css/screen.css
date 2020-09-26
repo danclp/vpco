@@ -604,7 +604,7 @@ main {
 }
 .site-form input[type=submit] {
   background: transparent;
-  border: 1px solid #FFF;
+  border: 2px solid #FFF;
   border-radius: 5px;
   color: #FFF;
   padding: 5px 20px;
@@ -631,7 +631,22 @@ main {
 }
 .site-form.member-form .site-form_container {
   border: 0;
+  margin-bottom: 60px;
   padding: 0;
+}
+.site-form.member-form .site-form_container:before, .site-form.member-form .site-form_container:after {
+  content: "";
+  display: table;
+}
+.site-form.member-form .site-form_container:after {
+  display: block;
+  clear: both;
+  height: 1px;
+  margin-top: -1px;
+  visibility: hidden;
+}
+.site-form.member-form .site-form_container {
+  *zoom: 1;
 }
 .site-form.member-form h3 {
   margin-bottom: 0;
@@ -650,6 +665,10 @@ main {
 }
 .site-form.member-form .input-email span {
   width: calc((100% / 12) * 4);
+}
+.site-form.member-form .input input[type=submit] {
+  float: right;
+  margin-top: 20px;
 }
 .site-form.member-form .info-col {
   margin-top: 50px;

@@ -34,7 +34,7 @@
 
 		&[type="submit"] {
 			background: transparent;
-			border: 1px solid site-color('day');
+			border: 2px solid site-color('day');
 			border-radius: 5px;
 			color: site-color('day');
 			padding: 5px 20px;
@@ -69,7 +69,9 @@
 
 		.site-form {
 			&_container {
+				@include clearfix;
 				border: 0;
+				margin-bottom: 60px;
 				padding: 0;
 			} // _container
 		} // .site-form
@@ -97,6 +99,13 @@
 					width: grid-width(4);
 				} //  span
 			} // -email
+
+			input {
+				&[type="submit"] {
+					float: right;
+					margin-top: 20px;
+				} // [type="submit"]
+			} // input
 		} // .input
 
 		.info-col {
