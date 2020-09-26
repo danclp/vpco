@@ -455,8 +455,30 @@ figure {
 }
 .site-header_brand {
   position: relative;
-  width: 120px;
   z-index: 1;
+}
+.site-header_brand:before, .site-header_brand:after {
+  content: "";
+  display: table;
+}
+.site-header_brand:after {
+  display: block;
+  clear: both;
+  height: 1px;
+  margin-top: -1px;
+  visibility: hidden;
+}
+.site-header_brand {
+  *zoom: 1;
+}
+.site-header_brand img {
+  display: inline-block;
+  width: 120px;
+}
+.site-header_brand a {
+  color: #FFF;
+  display: inline-block;
+  float: right;
 }
 .site-header:after {
   background-image: linear-gradient(to top, #0b1a36, rgba(29, 66, 138, 0));
