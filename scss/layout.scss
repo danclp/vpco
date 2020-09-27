@@ -144,7 +144,7 @@ main {
 	} // _container
 
 	@include breakpoint($tablet) {
-		margin-top: 150px;
+		margin-top: 175px;
 	} // bp($tablet)
 
 	@include breakpoint($desktop) {
@@ -155,7 +155,7 @@ main {
 
 	@include breakpoint($widescn) {
 		// position: absolute;
-		// margin-top: 210px;
+		margin-top: 225px;
 
 		&:after {
 			width: 20%;

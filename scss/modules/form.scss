@@ -16,6 +16,18 @@
 		} // font
 	} // h3
 
+	.signin-box {
+		label {
+			width: auto;
+		} // label
+
+		.alert {
+			display: inline-block;
+			float: right;
+			font-size: 0.85em;
+		} // .alert
+	} // .signin-box
+
 	.input {
 		margin-bottom: 10px;
 	} // .input

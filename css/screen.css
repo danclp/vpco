@@ -581,7 +581,7 @@ main {
 }
 @media screen and (min-width: 768px) {
   .site-footer {
-    margin-top: 150px;
+    margin-top: 175px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -590,6 +590,9 @@ main {
   }
 }
 @media screen and (min-width: 1920px) {
+  .site-footer {
+    margin-top: 225px;
+  }
   .site-footer:after {
     width: 20%;
   }
@@ -608,6 +611,14 @@ main {
   margin-top: 0;
   font-size: 1.5em;
   font-weight: 300;
+}
+.site-form .signin-box label {
+  width: auto;
+}
+.site-form .signin-box .alert {
+  display: inline-block;
+  float: right;
+  font-size: 0.85em;
 }
 .site-form .input {
   margin-bottom: 10px;
