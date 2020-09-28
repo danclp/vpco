@@ -59,8 +59,11 @@
 			border: 2px solid site-color('day');
 			border-radius: 5px;
 			color: site-color('day');
+			cursor: pointer;
 			padding: 5px 20px;
+			position: relative;
 			width: auto;
+			z-index: 10;
 		} // [type="submit"]
 	} // input
 

@@ -1,1 +1,0 @@
-jQuery(document).ready((function(e){e(".more").hide(),e(".morebtn a").click((function(o){o.preventDefault(),e(".more").slideToggle("slow"),e(".morebtn").hide()}))}));

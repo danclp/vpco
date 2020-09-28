@@ -1,0 +1,44 @@
+.resources {
+	ul {
+		list-style: none;
+
+		li {
+			margin-bottom: 30px;
+		} // li
+
+		a {
+			color: site-color('day');
+		} // a
+
+		img {
+
+			margin-bottom: 10px;
+		} // img
+	} // ul
+
+	@include retina('iPhonel') {
+		ul {
+			display: flex;
+			position: relative;
+			z-index: 10;
+
+			li {
+				padding: 10px;
+			} // li
+		} // ul
+	} // retina(iPhonel)
+
+	@include breakpoint($tablet) {
+		ul {
+			display: flex;
+			margin: 0 auto;
+			position: relative;
+			width: 80%;
+			z-index: 10;
+
+			li {
+				padding: 10px 15px;
+			} // li
+		} // ul
+	} // bp($tablet)
+} // .resources

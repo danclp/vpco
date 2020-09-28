@@ -39,6 +39,17 @@
 		margin-top: auto;
 	} // span
 
+	.profile {
+		a {
+			display: inline-block;
+			padding: 0;
+			text-decoration: underline;
+		} // a
+
+		position: relative;
+		z-index: 10;
+	} // .profile
+
 	@include breakpoint($tablet) {
 		margin: 0 auto;
 		width: 90%;
@@ -50,7 +61,12 @@
 
 	@include breakpoint($desktop) {
 		.big-block-button {
+			margin-bottom: 0;
 			width: grid-width(3, true);
 		} // ..big-block-button
+
+		.profile {
+			margin-top: 20px;
+		} // .profile
 	} // bp($desktop)
 } // .big-block-buttons
