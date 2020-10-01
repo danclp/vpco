@@ -283,6 +283,38 @@
 		"oAP": "/PDF/vPCO-Innovation-Challenge-2020_Sept-25-core-principals.pdf",
 		"oF": 0
 		},
+	"/registration-success.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/registration-success.html",
+		"oF": 0
+		},
+	"/registration-update-success.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/registration-update-success.html",
+		"oF": 0
+		},
+	"/registration-update.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/registration-update.html",
+		"oF": 0
+		},
+	"/registration.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/registration.html",
+		"oF": 0
+		},
 	"/resources.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -420,22 +452,6 @@
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
-		},
-	"/team-form-success.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/team-form-success.html",
-		"oF": 0
-		},
-	"/team-form.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/team-form.html",
-		"oF": 0
 		}
 	},
 "hooks": [

@@ -807,6 +807,7 @@ main {
   margin-top: auto;
 }
 .big-block-buttons .profile {
+  width: 100%;
   position: relative;
   z-index: 10;
 }
