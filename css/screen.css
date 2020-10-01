@@ -623,6 +623,20 @@ main {
 .site-form .input {
   margin-bottom: 10px;
 }
+.site-form .input span.label {
+  color: rgba(255, 255, 255, 0.65);
+  display: block;
+  font-size: 0.85em;
+}
+.site-form .input-group select {
+  background: transparent;
+  border: 1px solid #FFF;
+  border-radius: 0;
+  color: #FFF;
+  padding: 5px;
+  -webkit-appearance: none;
+  width: 100%;
+}
 .site-form label {
   color: rgba(255, 255, 255, 0.65);
   display: inline-block;
@@ -733,9 +747,9 @@ main {
   padding: 10px 20px;
 }
 @media screen and (min-width: 768px) {
-  .site-form.member-form form {
+  .site-form.member-form form, .site-form.member-form .profile-group {
     display: flex;
-    justify-contents: space-between;
+    justify-content: space-between;
   }
   .site-form.member-form .info-col {
     flex: 1;

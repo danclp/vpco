@@ -30,6 +30,26 @@
 
 	.input {
 		margin-bottom: 10px;
+
+		span {
+			&.label {
+				color: rgba(site-color('day'), 0.65);
+				display: block;
+				font-size: 0.85em;
+			} // .input
+		} // span
+
+		&-group {
+			select {
+				background: transparent;
+				border: 1px solid site-color('day');
+				border-radius: 0;
+				color: site-color('day');
+				padding: 5px;
+				-webkit-appearance: none;
+				width: 100%;
+			} // select
+		} // -group
 	} // .input
 
 	label {
@@ -169,10 +189,10 @@
 		} // .morebtn
 
 		@include breakpoint($tablet) {
-			form {
+			form, .profile-group {
 				display: flex;
-				justify-contents: space-between;
-			} // form
+				justify-content: space-between;
+			} // form, .profile-group
 
 			.info-col {
 				flex: 1;
