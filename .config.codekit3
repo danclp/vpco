@@ -19,6 +19,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/css/swiper-bundle.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/css/swiper-bundle-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/fonts/Metropolis-ExtraLight.ttf": {
 		"cB": 0,
 		"ft": 8192,
@@ -240,6 +250,39 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/swipeinit-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/swipeinit-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/swipeinit.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/swipeinit-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/swiper-bundle.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/swiper-bundle-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/landing.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -414,6 +457,19 @@
 		"oS": 0,
 		"sct": 0
 		},
+	"/scss/modules/movie.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/modules/movie.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
 	"/scss/modules/resources.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -423,6 +479,45 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/modules/resources.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/scss/modules/video-list.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/modules/video-list.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/scss/modules/video-submit.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/modules/video-submit.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/scss/modules/video-thumbs.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/modules/video-thumbs.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
@@ -452,6 +547,38 @@
 		"oF": 0,
 		"oS": 0,
 		"sct": 0
+		},
+	"/video-listing.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/video-listing.html",
+		"oF": 0
+		},
+	"/video-single.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/video-single.html",
+		"oF": 0
+		},
+	"/video-submit-success.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/video-submit-success.html",
+		"oF": 0
+		},
+	"/video-submit.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/video-submit.html",
+		"oF": 0
 		}
 	},
 "hooks": [

@@ -1,0 +1,281 @@
+.movie {
+	margin-bottom: 80px;
+
+	&-stage {
+		margin-bottom: 20px;
+	} // -stage
+
+	&-credit {
+		font-size: 0.85em;
+
+		&_actors {
+			display: flex;
+
+			> p {
+				flex: 1;
+				margin-right: 20px;
+			} // > p
+
+			ul {
+				flex: 2;
+			} // ul
+		} // _actors
+
+		&_rating {
+			display: flex;
+			flex-wrap: wrap;
+
+			i {
+				margin-right: 10px;
+			} // i
+
+			.viewed {
+				margin-right: 20px;
+			} // .viewed
+
+			.archive {
+				margin-top: 30px;
+				width: 100%;
+
+				a {
+					background: transparent;
+					border: 1px solid site-color('day');
+					border-radius: 5px;
+					display: inline-block;
+					color: site-color('day');
+					padding: 5px 10px;
+
+					i {
+						margin-right: 0;
+					} // i
+				} // a
+			} // .archive
+		} // _rating
+	} // -credit
+
+	button {
+		&.vjs-big-play-button {
+			// @include transform(translate(-50%, -50%));
+			// border-radius: 50%;
+			// top: 50%;
+			// left: 50%;
+			// width: 100px;
+			// height: 100px;
+		} // .vjs-big-play-button
+
+		.vjs-icon-placeholder {
+			&:before {
+				// font-size: 2em;
+				// line-height: 95px;
+			} // :before
+		} // .vjs-icon-placeholder
+	} // button
+
+	@include breakpoint($tablet) {
+		&-credit {
+			display: flex;
+			flex-wrap: wrap;
+
+			&_actors {
+				display: inline-block;
+				width: grid-width(4, true);
+			} // _actors
+
+			&_story {
+				width: grid-width(8);
+
+				h5 {
+					margin-top: 0;
+				} // h5
+			} // _story
+
+			&_rating {
+				align-items: center;
+				display: flex;
+				margin-top: 30px;
+
+				.archive {
+					margin-top: 0;
+					margin-left: 30px;
+					width: auto;
+				} // .archive
+			} // _rating
+		} // -credit
+	} // bp($tablet)
+
+	@include breakpoint($desktop) {
+		&-credit {
+			justify-content: space-between;
+
+			&_actors {
+				width: grid-width(3);
+			} // _actors
+
+			&_story {
+				margin-right: 30px;
+				width: grid-width(7, true);
+			} // _story
+
+			&_rating {
+				align-items: flex-start;
+				margin-top: 0;
+				width: grid-width(2);
+
+				.archive {
+					margin-left: 0;
+					width: 100%;
+				} // .archive
+			} // _rating
+		} // -credit
+	} // bp($desktop)
+
+	@include breakpoint($common) {
+		&-credit {
+			&_actors {
+				width: grid-width(2);
+			} // _actors
+
+			&_story {
+				width: grid-width(8, true);
+			} // _story
+
+			&_rating {
+				width: grid-width(2);
+			} // _rating
+		} // -credit
+	} // bp($common)
+} // .movie
+
+.comments {
+	h3 {
+		font-size: 1.5em;
+	} // h3
+
+	h4 {
+		font: {
+			size: 1.05em;
+			weight: weight('bold');
+		} // font
+		margin-top: 0;
+	} // h4
+
+	a {
+		background: transparent;
+		border: 1px solid site-color('day');
+		border-radius: 5px;
+		color: site-color('day');
+		display: inline-block;
+		font-size: 0.85em;
+		padding: 5px 10px;
+	} // a
+
+	ol, ul {
+		list-style: none;
+		padding: 0;
+	} // ol, ul
+
+	ol {
+		> li {
+			border-bottom: 1px dashed rgba(site-color("day"), 0.35);
+			margin-bottom: 30px;
+			padding-bottom: 30px;
+		} // li
+	} // ol
+
+	ul {
+		border-left: 3px solid rgba(site-color('day'), 0.35);
+		margin-top: 30px;
+		margin-left: 40px;
+		padding-left: 10px;
+	} // ul
+
+	&-input {
+		margin-top: 30px;
+
+		form {
+			input, textarea {
+				border: 0;
+				padding: 5px;
+				width: 100%;
+			} // input, textarea
+
+			input {
+				&[type="submit"] {
+					background: transparent;
+					border: 1px solid site-color('day');
+					border-radius: 5px;
+					color: site-color('day');
+					margin-top: 20px;
+				} // [type="submit"]
+			} // input
+
+			textarea {
+				margin-bottom: 30px;
+			} // textarea
+
+			label {
+				display: block;
+				margin-bottom: 10px;
+			} // label
+		} // form
+	} // -input
+
+	@include retina('iPhonel') {
+		&-input {
+			form {
+				input {
+					&[type="submit"] {
+						width: auto;
+					} // [type="submit"]
+				} // input
+			} // form
+		} // -input
+
+		&-wrap {
+			display: flex;
+		} // -wrap
+
+		&-body {
+			width: 80%;
+		} // -body
+
+		&-action {
+			margin-left: 30px;
+		} // -action
+	} // retina('iPhonel')
+
+	@include breakpoint($tablet) {
+		&-input {
+			input {
+				&[type="submit"] {
+					padding: 5px 15px;
+					width: auto;
+				} // [type="submit"]
+			} // input
+		} // -input
+
+		&-wrap {
+			display: flex;
+		} // -wrap
+
+		&-body {
+			width: 80%;
+		} // -body
+
+		&-action {
+			margin-left: 30px;
+		} // -action
+	} // bp($tablet)
+
+	@include breakpoint($desktop) {
+		width: 80%;
+
+		&-input {
+			width: 70%;
+		} // -input
+	} // bp($desktop)
+
+	@include breakpoint($common) {
+		margin-top: 150px;
+	} // bp($common)
+} // .comments

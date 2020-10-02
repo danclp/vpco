@@ -41,6 +41,10 @@ h5 {
 
 p {
 	margin          : 0 0 1.25em;
+
+	&:last-child {
+		margin-bottom : 0;
+	} // :last-child
 } //p
 
 small, .text_small {
@@ -50,6 +54,7 @@ small, .text_small {
 a {
 	color 					: site-color('indigo');
 	display         : block;
+	outline         : none;
 	text-decoration : none;
 } // a
 

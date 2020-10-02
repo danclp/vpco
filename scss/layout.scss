@@ -113,6 +113,8 @@
 main {
 	background: darken(site-color('indigo'), 20);
 	color: site-color('day');
+	overflow: hidden;
+	padding-bottom: 100px;
 } // main
 
 .site-footer {
