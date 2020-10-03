@@ -73,6 +73,29 @@
 			} // input
 		} // .input
 	} // bp($tablet)
+
+	&.booking {
+		form {
+			.input {
+				display: block;
+
+				label, input {
+					display: block;
+					width: 100%;
+				} // label, input
+
+				label {
+					margin-bottom: 10px;
+				} // label
+
+				input {
+					&[type="submit"] {
+						width: auto;
+					} // submit
+				} // input
+			} // .input
+		} // form
+	} // .booking
 } // .submit-form
 
 .submit-message {

@@ -25,6 +25,21 @@
 		padding-left: 30px;
 	} // _latest
 
+	&_header {
+		@include clearfix;
+
+		h4 {
+			float: left;
+		} // h4
+
+		a {
+			color: site-color('day');
+			float: right;
+			margin-top: 2.6rem;
+			padding-right: 20px;
+		} // a
+	} // _header
+
 	&_items {
 		display: flex;
 		// padding-left: 30px;

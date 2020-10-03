@@ -907,6 +907,29 @@ main {
   position: relative;
   padding-left: 30px;
 }
+.videos-listing_header:before, .videos-listing_header:after {
+  content: "";
+  display: table;
+}
+.videos-listing_header:after {
+  display: block;
+  clear: both;
+  height: 1px;
+  margin-top: -1px;
+  visibility: hidden;
+}
+.videos-listing_header {
+  *zoom: 1;
+}
+.videos-listing_header h4 {
+  float: left;
+}
+.videos-listing_header a {
+  color: #FFF;
+  float: right;
+  margin-top: 2.6rem;
+  padding-right: 20px;
+}
 .videos-listing_items {
   display: flex;
 }
@@ -1261,6 +1284,19 @@ main {
   .submit-form .input input[type=submit] {
     width: auto;
   }
+}
+.submit-form.booking form .input {
+  display: block;
+}
+.submit-form.booking form .input label, .submit-form.booking form .input input {
+  display: block;
+  width: 100%;
+}
+.submit-form.booking form .input label {
+  margin-bottom: 10px;
+}
+.submit-form.booking form .input input[type=submit] {
+  width: auto;
 }
 
 .submit-message {
