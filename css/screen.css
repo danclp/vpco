@@ -1320,3 +1320,98 @@ main {
     width: calc(((100% / 12) * 6) - 5%);
   }
 }
+
+.booking-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 960px;
+}
+.booking-table th {
+  background: #02060c;
+  color: #FFF;
+  font-weight: 700;
+  text-align: left;
+}
+.booking-table th, .booking-table td {
+  padding: 15px 10px;
+  text-align: left;
+}
+.booking-table td {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.35);
+}
+.booking-table td:first-child {
+  width: 40%;
+}
+.booking-table td:nth-child(2), .booking-table td:nth-child(3), .booking-table td:nth-child(4) {
+  width: 25%;
+}
+.booking-table td:nth-child(4) {
+  width: 10%;
+}
+.booking-table button {
+  background: transparent;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  color: #FFF;
+  padding: 5px 10px;
+}
+.booking-table button.cancel {
+  border: 1px solid red;
+  color: red;
+}
+.booking-table select {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #FFF;
+  border-radius: 0;
+  -webkit-appearance: none;
+  padding: 5px;
+  width: 100%;
+}
+.booking-table span {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.85em;
+}
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 980px) {
+  .booking-table table, .booking-table thead, .booking-table tbody, .booking-table th, .booking-table td, .booking-table tr {
+    display: block;
+  }
+  .booking-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .booking-table tr {
+    border-top: 1px solid #CCC;
+  }
+  .booking-table td {
+    border: none;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.35);
+    position: relative;
+    padding-left: 35%;
+  }
+  .booking-table td:before {
+    color: rgba(255, 255, 255, 0.65);
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-top: 8px;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  .booking-table td:nth-child(n) {
+    width: 100%;
+  }
+  .booking-table td:last-child {
+    border-bottom: 0;
+  }
+  .booking-table td:nth-of-type(1):before {
+    content: "Time-slot";
+  }
+  .booking-table td:nth-of-type(2):before {
+    content: "Team";
+  }
+  .booking-table td:nth-of-type(3):before {
+    content: "Booking";
+  }
+}

@@ -228,6 +228,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/images/PDF3.jpg": {
+		"ft": 16384,
+		"iS": 134538,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/images/PDF3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/images/vmware.png": {
 		"ft": 32768,
 		"iS": 4237,
@@ -324,6 +335,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/PDF/Leadership-Code-25-Sept-2020_FY21.pdf",
+		"oF": 0
+		},
+	"/PDF/Project-Velocity-Overview-Oct-6th.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/PDF/Project-Velocity-Overview-Oct-6th.pdf",
 		"oF": 0
 		},
 	"/PDF/vPCO-Innovation-Challenge-2020_Sept-25-core-principals.pdf": {
@@ -448,6 +467,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/modules/big-buttons.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/scss/modules/booking.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/modules/booking.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0

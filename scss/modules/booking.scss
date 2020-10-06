@@ -1,0 +1,120 @@
+.booking-table {
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 960px;
+
+	tr {
+		&:nth-of-type(odd) {
+			// background: darken(site-color('indigo'), 15);
+		} // :nth-of-type(odd)
+	} // tr
+
+	th {
+		background: darken(site-color('indigo'), 30);
+		color: site-color('day');
+		font-weight: weight('bold');
+		text-align: left;
+	} // th
+
+	th, td {
+		padding: 15px 10px;
+		text-align: left;
+	} // th, td
+
+	td {
+		border-bottom: 1px dashed rgba(site-color('day'), 0.35);
+
+		&:first-child {
+			width: 40%;
+		} // first-child
+
+		&:nth-child(2), &:nth-child(3), &:nth-child(4) {
+			width: 25%;
+		} // nth-child(2), &:nth-child(3), &:nth-child(4)
+
+		&:nth-child(4) {
+			width: 10%;
+		} // &:nth-child(4)
+	} // td
+
+	button {
+		background: transparent;
+		border: 1px solid site-color('day');
+		border-radius: 5px;
+		color: site-color('day');
+		padding: 5px 10px;
+
+		&.cancel {
+			border: 1px solid red;
+			color: red;
+		} // .cancel
+	} // button
+
+	select {
+		background: rgba(site-color('day'), 0.85);
+		border: 1px solid site-color('day');
+		border-radius: 0;
+		-webkit-appearance: none;
+		padding: 5px;
+		width: 100%;
+	} // select
+
+	span {
+		color: rgba(site-color('day'), 0.65);
+		font-size: 0.85em;
+	} // span
+
+	@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 980px) {
+		table, thead, tbody, th,td,tr {
+			display: block;
+		} // table, thead, tbody, th,td,tr
+
+		thead tr {
+			position: absolute;
+			top: -9999px;
+			left: -9999px
+		} // thead tr
+
+		tr {
+			border-top: 1px solid #CCC;
+		} // tr
+
+		td {
+			border: none;
+			border-bottom: 1px dashed rgba(site-color('day'), 0.35);
+			position: relative;
+			padding-left: 35%;
+
+			&:before {
+				color: rgba(site-color('day'), 0.65);
+				position: absolute;
+				top: 6px;
+				left: 6px;
+				width: 45%;
+				padding-top: 8px;
+				padding-right: 10px;
+				white-space: nowrap;
+			} // :before
+
+			&:nth-child(n) {
+				width: 100%;
+			} // :first-child
+
+			&:last-child {
+				border-bottom: 0;
+			} // :last-child
+
+			&:nth-of-type(1):before {
+				content: 'Time-slot';
+			} // nth-of-type(1):before
+
+			&:nth-of-type(2):before {
+				content: 'Team';
+			} // nth-of-type(1):before
+
+			&:nth-of-type(3):before {
+				content: 'Booking';
+			} // nth-of-type(1):before
+		} // td
+	} // media query
+} // booking-table
