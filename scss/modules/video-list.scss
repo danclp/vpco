@@ -6,7 +6,7 @@
 	@include retina('iPhonel') {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: space-around;
 
 		&-listing_item {
 			width: grid-width(6, true);
@@ -16,7 +16,7 @@
 	@include breakpoint($tablet) {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: space-around;
 
 		&-listing_item {
 			width: grid-width(4, true);
@@ -25,11 +25,25 @@
 
 	@include breakpoint($desktop) {
 		&-listing_item {
+			width: grid-width(3);
+
+			&:not(:nth-child(3n)) {
+				margin-right: 20px;
+			} // :nth-child(4n+1)
+		} // -listing_item
+	} // bp($desktop)
+
+	@include breakpoint($common) {
+		&-listing_item {
 			width: grid-width(2);
+
+			&:nth-child(n) {
+				margin-right: 0;
+			} // nth-child(n)
 
 			&:not(:nth-child(5n)) {
 				margin-right: 20px;
 			} // :nth-child(4n+1)
 		} // -listing_item
-	} // bp($desktop)
+	} // bp($common)
 } // .videos

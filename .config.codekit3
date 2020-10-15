@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "32186",
 "files": {
+	"/booking-success.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/booking-success.html",
+		"oF": 0
+		},
 	"/booking.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -269,6 +277,28 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"/js/jquery.magnific-popup.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/jquery.magnific-popup-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/js/popup.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/popup-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/js/swipeinit-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -506,6 +536,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/scss/modules/movie.css",
+		"oF": 0,
+		"oS": 0,
+		"sct": 0
+		},
+	"/scss/modules/popup.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/scss/modules/popup.css",
 		"oF": 0,
 		"oS": 0,
 		"sct": 0

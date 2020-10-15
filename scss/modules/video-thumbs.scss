@@ -6,10 +6,6 @@
 
 	h3 {
 		font-size: 1.5em;
-		padding-left: 30px;
-		// max-width: 96%;
-		// margin-left: auto;
-		// margin-right: 0;
 	} // h3
 
 	h4 {
@@ -19,13 +15,22 @@
 		// margin-right: auto;
 	} // h4
 
+	&_header {
+		padding-left: 30px;
+
+		p {
+			color: lighten(site-color('night'), 50);
+			font-size: 0.85em;
+		} // p
+	} // _header
+
 	&_latest {
 		margin-bottom: 60px;
 		position: relative;
 		padding-left: 30px;
 	} // _latest
 
-	&_header {
+	&_subheader {
 		@include clearfix;
 
 		h4 {
@@ -42,18 +47,16 @@
 
 	&_items {
 		display: flex;
-		// padding-left: 30px;
 	} // _items
 
 	&_item {
-		// min-width: 300px;
-		// max-width: 420px;
+		max-width: 320px;
 	} // _item
 
 	@include breakpoint($desktop) {
-		h3 {
+		&_header {
 			padding-left: 50px;
-		} // h3
+		} // _header
 
 		&_latest {
 			padding-left: 50px;
@@ -61,9 +64,9 @@
 	} // bp($desktop)
 
 	@include breakpoint($common) {
-		h3 {
+		&_header {
 			padding-left: 70px;
-		} // h3
+		} // _header
 
 		&_latest {
 			padding-left: 70px;
@@ -71,9 +74,9 @@
 	} // bp($common)
 
 	@include breakpoint($widescn) {
-		h3 {
+		&_header {
 			padding-left: 100px;
-		} // h3
+		} // _header
 
 		&_latest {
 			padding-left: 100px;

@@ -604,6 +604,10 @@ main {
   }
 }
 
+.loved {
+  display: none;
+}
+
 .site-form {
   margin: 30px auto 0;
   max-width: 500px;
@@ -897,34 +901,40 @@ main {
 }
 .videos-listing h3 {
   font-size: 1.5em;
-  padding-left: 30px;
 }
 .videos-listing h4 {
   font-size: 1em;
+}
+.videos-listing_header {
+  padding-left: 30px;
+}
+.videos-listing_header p {
+  color: gray;
+  font-size: 0.85em;
 }
 .videos-listing_latest {
   margin-bottom: 60px;
   position: relative;
   padding-left: 30px;
 }
-.videos-listing_header:before, .videos-listing_header:after {
+.videos-listing_subheader:before, .videos-listing_subheader:after {
   content: "";
   display: table;
 }
-.videos-listing_header:after {
+.videos-listing_subheader:after {
   display: block;
   clear: both;
   height: 1px;
   margin-top: -1px;
   visibility: hidden;
 }
-.videos-listing_header {
+.videos-listing_subheader {
   *zoom: 1;
 }
-.videos-listing_header h4 {
+.videos-listing_subheader h4 {
   float: left;
 }
-.videos-listing_header a {
+.videos-listing_subheader a {
   color: #FFF;
   float: right;
   margin-top: 2.6rem;
@@ -933,8 +943,11 @@ main {
 .videos-listing_items {
   display: flex;
 }
+.videos-listing_item {
+  max-width: 320px;
+}
 @media screen and (min-width: 1024px) {
-  .videos-listing h3 {
+  .videos-listing_header {
     padding-left: 50px;
   }
   .videos-listing_latest {
@@ -942,7 +955,7 @@ main {
   }
 }
 @media screen and (min-width: 1366px) {
-  .videos-listing h3 {
+  .videos-listing_header {
     padding-left: 70px;
   }
   .videos-listing_latest {
@@ -950,7 +963,7 @@ main {
   }
 }
 @media screen and (min-width: 1920px) {
-  .videos-listing h3 {
+  .videos-listing_header {
     padding-left: 100px;
   }
   .videos-listing_latest {
@@ -1130,6 +1143,23 @@ main {
   margin-left: 40px;
   padding-left: 10px;
 }
+.comments-action {
+  margin: 20px 0;
+}
+.comments form.reply input, .comments form.reply textarea {
+  border: 0;
+}
+.comments form.reply input {
+  background: transparent;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  color: #FFF;
+  margin-top: 20px;
+  padding: 5px 20px;
+}
+.comments form.reply textarea {
+  padding: 5px;
+}
 .comments-input {
   margin-top: 30px;
 }
@@ -1158,12 +1188,24 @@ main {
   }
   .comments-wrap {
     display: flex;
+    flex-wrap: wrap;
   }
   .comments-body {
     width: 80%;
   }
   .comments-action {
     margin-left: 30px;
+  }
+  .comments form.reply {
+    flex: 1 0 100%;
+    margin-top: 30px;
+  }
+  .comments form.reply input {
+    margin-top: 0;
+  }
+  .comments form.reply textarea {
+    margin-bottom: 30px;
+    width: 80%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1173,12 +1215,24 @@ main {
   }
   .comments-wrap {
     display: flex;
+    flex-wrap: wrap;
   }
   .comments-body {
     width: 80%;
   }
   .comments-action {
     margin-left: 30px;
+  }
+  .comments form.reply {
+    flex: 1 0 100%;
+    margin-top: 30px;
+  }
+  .comments form.reply input {
+    margin-top: 0;
+  }
+  .comments form.reply textarea {
+    margin-bottom: 30px;
+    width: 80%;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1202,7 +1256,7 @@ main {
   .videos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .videos-listing_item {
     width: calc(((100% / 12) * 6) - 5%);
@@ -1212,7 +1266,7 @@ main {
   .videos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .videos-listing_item {
     width: calc(((100% / 12) * 4) - 5%);
@@ -1220,7 +1274,18 @@ main {
 }
 @media screen and (min-width: 1024px) {
   .videos-listing_item {
+    width: calc((100% / 12) * 3);
+  }
+  .videos-listing_item:not(:nth-child(3n)) {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .videos-listing_item {
     width: calc((100% / 12) * 2);
+  }
+  .videos-listing_item:nth-child(n) {
+    margin-right: 0;
   }
   .videos-listing_item:not(:nth-child(5n)) {
     margin-right: 20px;
@@ -1242,6 +1307,10 @@ main {
 .submit-form .input label {
   display: block;
   width: 100%;
+}
+.submit-form .input label small {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.7em;
 }
 .submit-form .input input, .submit-form .input textarea {
   padding: 5px;
@@ -1414,4 +1483,46 @@ main {
   .booking-table td:nth-of-type(3):before {
     content: "Booking";
   }
+}
+
+#team {
+  color: #FFF;
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 60px 15px;
+  position: relative;
+}
+#team .team-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#team .team-group {
+  margin-bottom: 30px;
+  padding: 10px;
+  text-align: center;
+  width: 220px;
+}
+#team .team-group b {
+  border-bottom: 1px dashed gray;
+  display: block;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+#team .team-group .member {
+  color: gray;
+}
+#team button {
+  transition: all 0.35s ease-in-out;
+  color: #FFF;
+}
+
+.mfp-bg {
+  opacity: 1;
+}
+
+.mfp-close {
+  font-size: 1em;
+  width: auto;
 }

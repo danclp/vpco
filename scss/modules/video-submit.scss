@@ -14,6 +14,11 @@
 		label {
 			display: block;
 			width: 100%;
+
+			small {
+				color: rgba(site-color('day'), 0.65);
+				font-size: 0.7em;
+			} // small
 		} // label
 
 		input, textarea {
