@@ -19,11 +19,13 @@
 	@include retina('iPhonel') {
 		ul {
 			display: flex;
+			flex-wrap: wrap;
 			position: relative;
 			z-index: 10;
 
 			li {
 				padding: 10px;
+				width: calc(100% / 12 * 6);
 			} // li
 		} // ul
 	} // retina(iPhonel)
@@ -31,6 +33,7 @@
 	@include breakpoint($tablet) {
 		ul {
 			display: flex;
+			flex-wrap: wrap;
 			margin: 0 auto;
 			position: relative;
 			width: 80%;
@@ -38,7 +41,16 @@
 
 			li {
 				padding: 10px 15px;
+				width: calc(100% / 12 * 4);
 			} // li
 		} // ul
 	} // bp($tablet)
+
+	@include breakpoint($common) {
+		ul {
+			li {
+				width: calc(100% / 12 * 3);
+			} // li
+		} // ul
+	} // bp($common)
 } // .resources

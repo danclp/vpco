@@ -40,7 +40,7 @@
 			<div class="outer-wrap wrap">
 				<div class="submit-form">
 					<div class="submit-message">
-						<h3>Submit your video</h3>
+						<h3>Submit your presentation</h3>
 						<p>Just remember your presentation can be no longer than 10 minutes.</p>
 						<p>You can record your presentation in any way - get creative, but make sure you have included:</p>
 						<ul>
@@ -51,26 +51,91 @@
 						</ul>
 						Good luck!
 					</div>
-					<form action="">
-						<div class="input">
-							<label for="">Video Title</label>
-							<input type="text">
+					<div class="input">
+						<label for="">Please select your Upload Type</label>
+						<div class="inputype">
+							<div>
+								<input type="radio" id="video" name="type" value="video" checked="">
+								<label for="video">Video</label>
+							</div>
+							<div>
+								<input type="radio" id="file" name="type" value="file">
+								<label for="file">PDF</label><p>
+							</div>
 						</div>
-						<div class="input">
-							<label for="">Video Description</label>
-							<textarea name="" id="" cols="30" rows="10" placeholder="Please describe your innovation idea in 30 words or less"></textarea>
-						</div>
-						<div class="input">
-							<label for="">
-								Video Upload<br>
-								<small>(Maximum upload file size: 200 MB, .mp4 formatted)</small>
-							</label>
-							<input type="file">
-						</div>
-						<div class="input">
-							<input type="submit" value="submit your presentation">
-						</div>
-					</form>
+					</div>
+
+					<div class="video" style="display: block;">
+						<form action="">
+							<input type="hidden" name="type" value="video">
+							<div class="input">
+								<label for="">Team Name</label>
+								<select id="teamname" name="teamname">
+									<option value="">Please select team</option>
+									<option value="">Team 1</option>
+									<option value="">Team 2</option>
+								</select>
+							</div>
+							<div class="input">
+								<label for="">Presentation Title</label>
+								<input type="text">
+							</div>
+							<div class="input">
+								<label for="">Presentation Description</label>
+								<textarea name="" id="" cols="30" rows="10" placeholder="Please describe your innovation idea in 30 words or less"></textarea>
+							</div>
+							<div class="input">
+								<label for="">
+									Video Upload<br>
+									<small>(Maximum upload file size: 200 MB, .mp4 formatted)</small>
+								</label>
+								<input type="file">
+							</div>
+							<div class="input">
+								<input type="submit" value="submit your presentation">
+							</div>
+						</form>
+					</div>
+
+					<div class="file" style="display: none">
+						<form action="">
+							<input type="hidden" name="type" value="file">
+							<div class="input">
+								<label for="">Team Name</label>
+								<select id="teamname" name="teamname">
+									<option value="">Please select team</option>
+									<option value="">Team 1</option>
+									<option value="">Team 2</option>
+								</select>
+							</div>
+							<div class="input">
+								<label for="">Presentation Title</label>
+								<input type="text">
+							</div>
+							<div class="input">
+								<label for="">Presentation Description</label>
+								<textarea name="" id="" cols="30" rows="10" placeholder="Please describe your innovation idea in 30 words or less"></textarea>
+							</div>
+							<div class="input">
+								<label for="">Thumbnail Upload</label>
+								<input type="file" name="thumbnail">
+							</div>
+							<div class="input">
+								<label for="">PDF Upload</label>
+								<input type="file" name="file">
+							</div>
+							<div class="input">
+								<label for="">
+									Video Upload<br>
+									<small>(Maximum upload file size: 200 MB, .mp4 formatted)</small>
+								</label>
+								<input type="file">
+							</div>
+							<div class="input">
+								<input type="submit" value="submit your presentation">
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</main>

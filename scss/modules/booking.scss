@@ -4,9 +4,18 @@
 	max-width: 960px;
 
 	tr {
-		&:nth-of-type(odd) {
-			// background: darken(site-color('indigo'), 15);
-		} // :nth-of-type(odd)
+		&.inactive {
+			color: rgba(site-color('day'), 0.5);
+
+			button {
+				border: 1px solid rgba(site-color('day'), 0.5);
+				color: rgba(site-color('day'), 0.5);
+			} // button
+
+			span {
+				color: rgba(site-color('day'), 0.5);
+			} // span
+		} // .inactive
 	} // tr
 
 	th {

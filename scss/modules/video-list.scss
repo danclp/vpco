@@ -1,6 +1,11 @@
 .videos {
 	&-listing_item {
 		margin-bottom: 30px;
+
+		a {
+			max-height: 180px;
+			overflow: hidden;
+		} // a
 	} // -listing_item
 
 	@include retina('iPhonel') {
@@ -10,6 +15,12 @@
 
 		&-listing_item {
 			width: grid-width(6, true);
+
+			a {
+				max-width: 300px;
+				max-height: 165px;
+				overflow: hidden;
+			} // a
 		} // -listing_item
 	} // retina(iPhonel)
 

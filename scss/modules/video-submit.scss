@@ -37,6 +37,18 @@
 				padding: 10px 15px;
 			} // [type="submit"]
 		} // input
+
+		.inputype {
+			> div {
+				display: inline-block;
+				margin-right: 20px;
+				
+				label, input {
+					display: inline-block;
+					width: auto;
+				} // label, input
+			} // > div
+		} // .inputype
 	} // .input
 
 	@include retina(iPhonel) {
@@ -64,12 +76,13 @@
 			display: flex;
 
 			label {
+				margin-right: 20px;
 				width: grid-width(4);
 			} // label
 
-			input, textarea {
+			input, textarea, .inputype {
 				width: grid-width(8);
-			} // input, textarea
+			} // input, textarea, .inputype
 
 			input {
 				&[type="submit"] {

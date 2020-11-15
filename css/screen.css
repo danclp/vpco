@@ -874,16 +874,19 @@ main {
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
   .resources ul {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     z-index: 10;
   }
   .resources ul li {
     padding: 10px;
+    width: calc(100% / 12 * 6);
   }
 }
 @media screen and (min-width: 768px) {
   .resources ul {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     position: relative;
     width: 80%;
@@ -891,6 +894,12 @@ main {
   }
   .resources ul li {
     padding: 10px 15px;
+    width: calc(100% / 12 * 4);
+  }
+}
+@media screen and (min-width: 1366px) {
+  .resources ul li {
+    width: calc(100% / 12 * 3);
   }
 }
 
@@ -998,7 +1007,7 @@ main {
 }
 
 .swiper-button-next, .swiper-button-prev {
-  transform: translateY(-25%);
+  transform: translateY(-55%);
   background: rgba(0, 0, 0, 0.35);
   border-radius: 5px;
   color: #FFF;
@@ -1252,6 +1261,10 @@ main {
 .videos-listing_item {
   margin-bottom: 30px;
 }
+.videos-listing_item a {
+  max-height: 180px;
+  overflow: hidden;
+}
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
   .videos {
     display: flex;
@@ -1260,6 +1273,11 @@ main {
   }
   .videos-listing_item {
     width: calc(((100% / 12) * 6) - 5%);
+  }
+  .videos-listing_item a {
+    max-width: 300px;
+    max-height: 165px;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1326,6 +1344,14 @@ main {
   color: #FFF;
   padding: 10px 15px;
 }
+.submit-form .input .inputype > div {
+  display: inline-block;
+  margin-right: 20px;
+}
+.submit-form .input .inputype > div label, .submit-form .input .inputype > div input {
+  display: inline-block;
+  width: auto;
+}
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
   .submit-form .input {
     display: flex;
@@ -1345,9 +1371,10 @@ main {
     display: flex;
   }
   .submit-form .input label {
+    margin-right: 20px;
     width: calc((100% / 12) * 4);
   }
-  .submit-form .input input, .submit-form .input textarea {
+  .submit-form .input input, .submit-form .input textarea, .submit-form .input .inputype {
     width: calc((100% / 12) * 8);
   }
   .submit-form .input input[type=submit] {
@@ -1394,6 +1421,16 @@ main {
   border-collapse: collapse;
   width: 100%;
   max-width: 960px;
+}
+.booking-table tr.inactive {
+  color: rgba(255, 255, 255, 0.5);
+}
+.booking-table tr.inactive button {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+}
+.booking-table tr.inactive span {
+  color: rgba(255, 255, 255, 0.5);
 }
 .booking-table th {
   background: #02060c;
